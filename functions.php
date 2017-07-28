@@ -16,4 +16,19 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+register_sidebar(array(
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</div>',
+	'before_title'  => '<h2>',
+	'after_title'   => '</h2>'
+));
+
+
+// Register My Menus
+register_nav_menus(array(
+'main-menu' => __( 'Main' ),
+));
+//
+
+
 ?>
