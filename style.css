@@ -188,72 +188,95 @@ div.columnset{
     padding-bottom:5%;
     font-size: 1.6em;
 }
-
-#cssmenu {
-	padding: 8px 0;
+#sidebar{
+	float: right;
+	}
+#navigation {
+    padding: 8px 0;
     background-color: lightgrey;
     position: relative;
 }
-.menulist {
+#navigation-items
+ {
     list-style: none;
     text-align: center;
     font-size: 0px;
 }
-.menulist li {
+#navigation-items
+ li {
     display: inline-block;
     font-size: 1.25rem;
 }
-#cssmenu a:link, #cssmenu a:visited {
-	padding: .5em 1em;
-	letter-spacing: .125em;
-	text-transform: uppercase;
-	font-style: italic;
-	transition: background-color .25s;
+#navigation a:link, #navigation a:visited {
+    padding: .5em 1em;
+    letter-spacing: .125em;
+    text-transform: uppercase;
+    font-style: italic;
+    transition: background-color .25s;
 }
-#cssmenu a:hover {
+#navigation a:hover {
     background-color: rgba(255,255,255,.8);
 }
-.menubutton {
-	display: none;
+
+#navigation ul li ul.sub-menu {
+display: none;
+}
+#menubutton
+ {
+    display: none;
     border: none;
     cursor: pointer;
     width: 36px;
     height: 36px;
-	position: relative;
-	padding-left: 1.5em;
+    position: relative;
+    padding-left: 1.5em;
 }
-.menubutton:before {
-	font-size: 2em;
-	content: "";
-	position: absolute;
-	top: 0.25em;
-	left: 0.25em;
-	width: .75em;
-	height: 0.125em;
-	border-top: 0.375em double #fff;
-	border-bottom: 0.125em solid #fff;
+#menubutton:before {
+    font-size: 2em;
+    content: "";
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    width: .75em;
+    height: 0.125em;
+    border-top: 0.375em double #fff;
+    border-bottom: 0.125em solid #fff;
 }
-@media (max-width: 600px) {
-	#cssmenu {
-		padding: 0;
-	}
-	.menubutton {
-		display: inline-block;
-	}
-	.menulist {
-		display: none;
-		position: absolute;
-		background-color: rgba(211, 211, 211, .8);
-		width: 200px;
-	}
-	.menulist li {
-		display: block;
-	}
-	.menulist a:link {
-		display: block;
-	}
-	#cssmenu:hover .menulist{
-		display: block;
 
-	}
+#navigation ul li.current-menu-item a, #navigation ul li.current-menu-parent a {
+color: white;
+}
+
+@media (max-width: 600px) {
+    #navigation {
+        padding: 0;
+    }
+    #navigation ul li ul.sub-menu {
+display: block;
+}
+    #menubutton
+ {
+        display: inline-block;
+    }
+    #navigation-items
+ {
+        display: none;
+        position: absolute;
+        background-color: rgba(211, 211, 211, .8);
+        width: 200px;
+    }
+    #navigation-items
+ li {
+        display: block;
+    }
+    #navigation-items
+ a:link {
+        display: block;
+    }
+    #navigation:hover #navigation-items
+{
+        display: block;
+
+    }
+
 }
