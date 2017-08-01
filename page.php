@@ -5,7 +5,7 @@
     <?php the_title(); // get the page or posting title ?></a></h2>
     <?php the_content(''); // get page or posting written content ?>
     <?php endwhile; endif; // end the loop ?>
-    <small>index.php</small>
+    <small>page.php</small>
     </div>
     </header> 
         <!-- START LEFT COLUMN -->
