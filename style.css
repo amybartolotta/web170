@@ -14,6 +14,19 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+#content article.post-excerpt {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+img.wp-post-image {}
+#content img {
+	float: left;
+	margin: 4px 20px 0 0;
+}
+img.attachment-medium {}
+img.attachment-large {}
+img.attachment-full {}
 
 html, body {
     background-color:white;
@@ -31,12 +44,12 @@ html {
     line-height:138%;
 
 }
-#news img {
+/*#news img {
     width:50%;
     height:50%;
     text-align:center;
     padding-top:5%;
-}
+}*/
 
 p {
     line-height:138%;
@@ -134,30 +147,12 @@ header a {
     right: 50%;
 }
 
-#hs4 img {
-    width:70%;
-    padding-top: 5%;
-    padding-bottom:5%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-
-
-}
 
 #hs1 {
     font-size:1.2em;
     padding-left: 5%;
     padding-top: 5%;
     padding-bottom:5%;
-}
-
-#hs1 img{
-    padding-right: 5%;
-    padding-bottom: 5%;
-    width: 35%;
-    height: 35%;
-    float:left;
 }
 
 
@@ -169,15 +164,6 @@ div.columnset{
    width:90%; 
 }
 
-#hs2 img{
-    padding-top: 5%;
-    padding-bottom: 1%;
-    width: 50%;
-    height: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
 
 #reel {
     letter-spacing: .125em;
@@ -188,9 +174,11 @@ div.columnset{
     padding-bottom:5%;
     font-size: 1.6em;
 }
-#sidebar{
+
+#sidebar {
 	float: right;
-	}
+}
+
 #navigation {
     padding: 8px 0;
     background-color: lightgrey;
@@ -247,6 +235,7 @@ display: none;
 color: white;
 }
 
+
 @media (max-width: 600px) {
     #navigation {
         padding: 0;
@@ -278,5 +267,5 @@ display: block;
         display: block;
 
     }
-
 }
+
