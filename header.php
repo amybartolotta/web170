@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
+<!-- Start Title Tag -->
+<title><?php get_my_title_tag(); ?></title>
+<!-- End Title Tag -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
     <meta name="viewport" content="width=device-width" />
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all" />
 
